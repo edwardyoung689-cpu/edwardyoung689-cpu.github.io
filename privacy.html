@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · Trading Mail Chart Import (Personal)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="label">Personal application</p>
+    <h1>Privacy Policy</h1>
+    <p>This policy describes how Trading Mail Chart Import (Personal) accesses and uses information for its owner's configured workflows.</p>
+    <h2>Information accessed and why</h2>
+    <ul>
+      <li><strong>Gmail sending:</strong> the alert sender sends notifications to the account owner, including relevant configured Telegram updates or trading execution details.</li>
+      <li><strong>Gmail metadata:</strong> the alert sender checks sent-message headers and identifiers to reconcile delivery, avoid duplicate notifications, and maintain conversations. This alert sender does not need Gmail message bodies for that reconciliation.</li>
+      <li><strong>Incoming mail:</strong> a separate, configured read-only workflow may read selected incoming messages and their attachments to prepare reference charts and archive source material. It may use Google Cloud Pub/Sub for arrival notifications.</li>
+      <li><strong>Other sources:</strong> configured local components read selected Telegram channel messages and trading account execution information to generate alerts.</li>
+    </ul>
+    <h2>Storage and sharing</h2>
+    <p>Queues, delivery status, source records, and selected reference material may be stored on the owner's computer. The alert sender stores its Gmail authorization credentials in a Windows-protected local file. Gmail necessarily processes alert emails for delivery; Telegram and trading platforms provide the configured source data. Depending on the owner's configured analysis workflows, selected source text or images may be processed by the services used for that analysis.</p>
+    <p>The application does not sell user data. Google user data is used to provide the configured functions described here and is not used for advertising.</p>
+    <h2>Retention and control</h2>
+    <p>The owner can stop the application, remove local records, and revoke its Google Account access through Google account security settings. Local records may remain until the owner removes them; emails already delivered remain subject to the owner's Gmail settings.</p>
+    <h2>Contact</h2>
+    <p>For questions about this personal application, use the support contact shown on its Google authorization screen.</p>
+    <p class="zh" lang="zh-CN">本工具仅按配置处理提醒和资料整理。发信程序读取邮件标头用于投递核对；独立配置的收信流程可能读取指定邮件及附件。数据不会被出售。</p>
+    <footer><a href="index.html">Home</a> · <a href="terms.html">Terms of Service</a></footer>
+  </main>
+</body>
+</html>
+
