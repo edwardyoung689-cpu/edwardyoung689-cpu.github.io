@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trading Mail Chart Import (Personal)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="label">Personal application</p>
+    <h1>Trading Mail Chart Import (Personal)</h1>
+    <p>This personal application helps its owner receive alerts and organize trading-related source material. It is operated for personal use.</p>
+    <h2>What the application does</h2>
+    <ul>
+      <li>Monitors configured trading execution data and selected Telegram channel updates, then emails alerts to the account owner.</li>
+      <li>Uses Gmail to send alerts and checks message metadata to reconcile delivery, reduce duplicates, and group related alerts into conversations.</li>
+      <li>In separately configured workflows, reads selected incoming mail and associated images to prepare local reference charts; Google Cloud Pub/Sub can provide notification of new mail.</li>
+    </ul>
+    <p>Trading data is used for monitoring and reference. These alert workflows do not place or change trades.</p>
+    <h2>How Google data is used</h2>
+    <p>The application requests the Google permissions needed for the functions the owner enables. The separate alert sender uses Gmail send and metadata permissions. Configured incoming-mail workflows may request Gmail read-only and Pub/Sub permissions. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+    <p class="zh" lang="zh-CN">这是供个人使用的邮件监控与资料整理工具：它按配置读取成交及电报消息，通过 Gmail 发送提醒，并可在独立配置的流程中读取指定邮件和图片以整理本地参考图。</p>
+    <footer><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></footer>
+  </main>
+</body>
+</html>
+
